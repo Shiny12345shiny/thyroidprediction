@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thyroid Disorder Prediction</title>
+</head>
+
+<body style="background-color:aliceblue;">
+
+<center>
+
+<h1 style="font-family:Papyrus;">Thyroid Disorder Prediction</h1>
+
+<form action="/predict" method="post">
+
+    Sex:
+    <select name="sex" id="sex">
+        <option value="0">Female</option>
+        <option value="1">Male</option>
+    </select>
+    <br><br>
+
+    On Thyroxine:
+    <select name="on_thyroxine" id="on_thyroxine">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    Pregnant:
+    <select name="pregnant" id="pregnant">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    Query Hypothyroid:
+    <select name="query_hypothyroid" id="query_hypothyroid">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    Goitre:
+    <select name="goitre" id="goitre">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    Psych:
+    <select name="psych" id="psych">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    TSH Measured:
+    <select name="tsh_measured" id="tsh_measured">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br><br>
+
+    TSH:
+    <input type="number" step="any" name="tsh" id="tsh">
+    <br><br>
+
+    TT4:
+    <input type="number" step="any" name="tt4" id="tt4">
+    <br><br>
+
+    FTI:
+    <input type="number" step="any" name="fti" id="fti">
+    <br><br>
+
+    
+    <button>Submit</button>
+    
+
+</form>
+
+</center>
+
+</body>
+</html>
